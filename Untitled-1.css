@@ -1,0 +1,277 @@
+body {
+    background-color: #1A1A25;
+    margin: 0;
+    color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    margin: 1%;
+    width: 50%;
+}
+
+.container {
+    max-width: 1350px;
+    margin: auto;
+}
+
+.search {
+    margin-left: 5%;
+    padding: 1.5%;
+    border-radius: 20px;
+    display: inline-block;
+    transform: translateY(-7%);
+    transition: transform 0.5s ease-in-out;
+    color: white;
+    background-color: rgb(137, 7, 135);
+}
+
+.search:focus {
+    transform: translateY(-12px);
+}
+
+::placeholder {
+    color: white;
+}
+
+.logo {
+    width: 7%;
+}
+
+.right-top {
+    text-align: right;
+    margin-top: 2.5%;
+}
+
+.right-top a {
+    margin-left: 3%;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+header {
+    padding-top: 1%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 0 3px gray;
+    z-index: 9999;
+    background-color: #1A1A25;
+}
+
+.w-25 {
+    width: 25%;
+}
+
+.hero {
+    margin-top: 100px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.hero .col,
+.hero .col>div {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 3%;
+    border-radius: 15px;
+}
+
+.hero h3 {
+    position: absolute;
+    top: 5%;
+    left: 7%;
+}
+
+.hero p {
+    position: absolute;
+    top: 11%;
+    left: 7%;
+    font-size: 20px;
+}
+
+.hero img {
+    transition: transform 2s ease-in-out;
+    border-radius: 15px;
+}
+
+.hero img:hover {
+    transform: scale(1.3);
+}
+
+.clients {
+    text-align: center;
+}
+
+.clients .col {
+    background-color: #0b303e;
+    padding-top: 2%;
+    border-radius: 15px;
+    box-shadow: 0 0 0 rgb(226, 0, 225, 1);
+    transition: box-shadow ease-in-out 0.5s, transform ease-in-out 0.5s;
+}
+
+.clients .col:hover {
+    background: rgb(81, 0, 79);
+    background: linear-gradient(69deg, rgba(226, 0, 255, 1) 0%, rgba(81, 0, 79, 1) 100%);
+    box-shadow: -5px 5px 5px rgb(177, 7, 200);
+    transform: translateY(-10px)
+}
+
+.items h2 {
+    text-align: center;
+}
+
+.line {
+    height: 3px;
+    width: 5%;
+    background: rgb(81, 0, 79);
+    background: linear-gradient(69deg, rgba(226, 0, 255, 1) 0%, rgba(81, 0, 79, 1) 100%);
+    margin: 10px auto;
+}
+
+.items .col {
+    background-color: #0b303e;
+    padding: 20px;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.items .col:hover {
+    background: rgb(81, 0, 79);
+    background: linear-gradient(69deg, rgba(226, 0, 255, 1) 0%, rgba(81, 0, 79, 1) 100%);
+}
+
+.items .img1 {
+    border-radius: 15px;
+}
+
+.items .author {
+    position: absolute;
+    width: 30%;
+    height: 80px;
+    left: -100px;
+    top: 10px;
+    border-radius: 50%;
+    transition: left ease-in-out .5s, transform ease-in-out .5s;
+}
+
+.items .col:hover .author {
+    left: 10px;
+    transform: rotate(360deg);
+}
+
+.head {
+    margin-top: -5%;
+    margin-right: 3%;
+}
+
+.head>div {
+    height: 3px;
+    margin-top: 1%;
+    float: right;
+    width: 5%;
+    background: rgb(81, 0, 79);
+    background: linear-gradient(69deg, rgba(226, 0, 255, 1) 0%, rgba(81, 0, 79, 1) 100%);
+}
+.footer {
+    text-align: center;
+    width: 100%;
+    margin-bottom: -15px;
+    background-color: #0b303e;
+    margin-top: 30px;
+    max-height: 300px;
+    bottom: 0;
+}
+
+.footer h2 {
+    margin-top: 0px;
+    color: rgb(247, 246, 246);
+    font-size: 30px;
+}
+
+.footer a {
+    color: rgb(6, 69, 184);
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+.footer i {
+    color: #0c25b1;
+}
+
+@media (max-width:1080px) {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .right-top {
+        display: flex;
+        margin-top: -37.5%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: -webkit-center;
+    }
+    .right-top a {
+        width: 82px;
+        margin-top: 5px;
+    }
+    .hero .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .hero .col {
+        width: 80%;
+        height: 500px!important;
+    }
+    header {
+        display: flex;
+        justify-content: center;
+    }
+    .logo {
+        width: 77%;
+        margin-left: -239%;
+    }
+    .search {
+        display: none;
+    }
+    .search:focus {
+        transform: translateY(-23px);
+    }
+    .hero .col {
+        height: 800px!important;
+    }
+    #col {
+        height: 400px!important;
+        margin-top: 57px;
+    }
+    .clients .col {
+        margin: 3%;
+        width: 82%;
+    }
+    .items .col {
+        margin: 3%;
+        width: 80%;
+    }
+    .footer p {
+        margin-left: 45px;
+    }
+}
